@@ -34,7 +34,7 @@ jobs:
     needs: build
     steps:
       - name: Run tests with pytest
-      - run: |
+        run: |
           cd devops/
           python -m pytest -v
       - run: echo "🍏 This job's status is ${{ job.status }}."
